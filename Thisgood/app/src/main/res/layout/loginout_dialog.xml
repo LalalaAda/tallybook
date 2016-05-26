@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="300dp"
+    android:layout_height="200dp"
+    android:background="#ffffff"
+    android:layout_gravity="center">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        card_view:cardBackgroundColor="#0089a7"
+        android:outlineProvider="background">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="警告 !"
+            android:textSize="20sp"
+            android:textColor="#ffffff"
+            android:gravity="center"/>
+    </android.support.v7.widget.CardView>
+    <TextView
+        android:layout_width="200dp"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp"
+        android:layout_height="100dp"
+        android:text="注销成功将删除所有数据"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:gravity="center"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+
+        android:orientation="horizontal">
+        <Button
+            android:id="@+id/loginout_cancel"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="取消"
+            android:background="#ffffff"/>
+        <Button
+            android:id="@+id/loginout_ok"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="确定"
+            android:background="#ffffff"/>
+    </LinearLayout>
+</LinearLayout>

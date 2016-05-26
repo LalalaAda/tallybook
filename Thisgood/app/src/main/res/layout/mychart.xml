@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        card_view:cardBackgroundColor="#0089A7"
+        android:outlineProvider="bounds">
+        <Spinner
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/tu_sp"></Spinner>
+    </android.support.v7.widget.CardView>
+    <com.github.mikephil.charting.charts.PieChart
+        android:id="@+id/spread_pie_chart"
+        android:layout_width="match_parent"
+        android:layout_height="320dp"
+        android:layout_gravity="center_horizontal"
+        >
+
+    </com.github.mikephil.charting.charts.PieChart>
+</LinearLayout>
